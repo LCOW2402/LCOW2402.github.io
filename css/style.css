@@ -1,0 +1,140 @@
+/* Dhaval Gajjar - C0924338 */
+/* Style.css */
+
+/* Reset default styles */
+
+body,header,nav,footer,main,h1,div,img,ul{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+img{
+    max-width: 100%;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    transition: color 0.3s ease;
+    font-size: 22px;
+}
+
+nav ul li a:hover {
+    background-color:#572f7a ;
+    color: #fff;
+}
+
+section {
+    padding: 40px;
+}
+section h1{
+    background-color: #572f7a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+section h1 span{
+    border-bottom: 2px dashed #fff;
+}
+
+section.specials{
+    padding: 0;
+}
+
+/* Specials page style */
+
+.product-of-the-week {
+    text-align: center;
+    padding: 40px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-details img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product-description {
+    text-align: left;
+}
+
+.product-description h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-description p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-description ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.product-description ul li {
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.special-offer {
+    color: #ffcc00;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+/* Footer Style starts here */
+footer {
+    background-color: #572f7a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 12px;
+}
+footer p{
+    margin-bottom: 2px;
+}
+footer p:last-child{
+    margin-bottom: 0;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+footer a:hover{
+    color: #7f8cd9;
+}
