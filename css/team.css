@@ -1,0 +1,43 @@
+/* Dhaval Gajjar - C0924338 */
+/* team.css */
+/* additional css for Team page */
+
+
+.team-description {
+    padding-bottom: 0px;
+}
+
+/* Styles for the team members section */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.team-members h1{
+    grid-column: 1 / -1;
+
+}
+
+
+/* Styles for each member */
+.member {
+    text-align: center;
+}
+
+/* Styles for the figure (image and caption) */
+.member figure {
+    margin: 0;
+}
+
+.member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.member figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}

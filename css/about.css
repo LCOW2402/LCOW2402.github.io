@@ -1,0 +1,24 @@
+/* Dhaval Gajjar - C0924338 */
+/* about.css */
+/* additional css for about us page */
+
+section{
+    padding-bottom: 0;
+}
+
+section.guarantee{
+    padding-bottom: 15px;
+}
+.mobile{
+    display: none;
+}
+
+@media screen and (min-width: 630px), print { 
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .mobile{
+        display: block;
+    }
+}
+
+
