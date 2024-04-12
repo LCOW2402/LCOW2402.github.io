@@ -15,24 +15,42 @@ File Name: Index.html       -->
 <body>
     <div class="container">
         <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" height="110" alt="">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="specials.html">Specials</a></li>
-                    <li><a href="training.html">Training</a></li>
-                    <li><a href="media.html">Media</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
+            <!-- Mobile Nav -->
+       <nav class="mobile" id="mobile-menu">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="team.html">Our Team</a></li>
+               <li><a href="specials.html">Specials</a></li>
+               <li><a href="training.html">Training</a></li>
+               <li><a href="media.html">Media</a></li>
+               <li><a href="faqs.html">FAQs</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+       </nav>
+       <a class="menu-icon" onclick="hamburger()">
+           <div>&#9776;</div>
+       </a>
+           <div class="logo" id="ffc-logo">
+               <a href="index.html">
+                   <img src="images/logo.png" height="110" alt="">
+               </a>
+           </div>
+
+           <!-- Desktop - Tablet Nav -->
+           <nav class="tablet-desktop">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="team.html">Our Team</a></li>
+                   <li><a href="specials.html">Specials</a></li>
+                   <li><a href="training.html">Training</a></li>
+                   <li><a href="media.html">Media</a></li>
+                   <li><a href="faqs.html">FAQs</a></li>
+                   <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+           </nav>
+       </header>
         <!-- Banner Image  
         <div class="banner">
             <img src="images/banner1.jpg" alt="Banner Image" height="400" width="100%">
@@ -45,19 +63,19 @@ File Name: Index.html       -->
             <fieldset>
                 <legend>Contact Information</legend>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required>
 
                 <label for="phone">Phone:</label>
-                <input type="text" id="phone" name="phone">
+                <input type="text" id="phone" placeholder="+1-123-1234567" name="phone">
 
-                <label for="gender">Gender:</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
+                <label class="gender" for="gender">Gender:</label>
+                <input class="gender" type="radio" id="male" name="gender" value="male">
+                <label class="gender" for="male">Male</label>
+                <input class="gender" type="radio" id="female" name="gender" value="female">
+                <label class="gender" for="female">Female</label>
 
                 <label for="birthdate">Date of Birth:</label>
                 <input type="date" id="birthdate" name="birthdate"> 
@@ -75,12 +93,12 @@ File Name: Index.html       -->
             <fieldset>
                 <legend>Message</legend>
                 <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
+                <input type="text" placeholder="Subject" id="subject" name="subject" required>
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
 
-                <label for="newsletter">Subscribe to newsletter:</label>
+                <label class="gender" for="newsletter">Subscribe to newsletter:</label>
                 <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
 
             </fieldset>
@@ -98,5 +116,6 @@ File Name: Index.html       -->
 
         </footer>
     </div>    
+    <script src="scripts/script.js"></script>
 </body>
 </html>

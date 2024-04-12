@@ -15,25 +15,43 @@ File Name: Index.html       -->
 <body>
     <div class="container">
         <header>
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" height="110" alt="">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="team.html">Our Team</a></li>
-                    <li><a href="specials.html">Specials</a></li>
-                    <li><a href="training.html">Training</a></li>
-                    <li><a href="media.html">Media</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
+            <!-- Mobile Nav -->
+       <nav class="mobile" id="mobile-menu">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="team.html">Our Team</a></li>
+               <li><a href="specials.html">Specials</a></li>
+               <li><a href="training.html">Training</a></li>
+               <li><a href="media.html">Media</a></li>
+               <li><a href="faqs.html">FAQs</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+           </ul>
+       </nav>
+       <a class="menu-icon" onclick="hamburger()">
+           <div>&#9776;</div>
+       </a>
+           <div class="logo" id="ffc-logo">
+               <a href="index.html">
+                   <img src="images/logo.png" height="110" alt="">
+               </a>
+           </div>
+
+           <!-- Desktop - Tablet Nav -->
+           <nav class="tablet-desktop">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="team.html">Our Team</a></li>
+                   <li><a href="specials.html">Specials</a></li>
+                   <li><a href="training.html">Training</a></li>
+                   <li><a href="media.html">Media</a></li>
+                   <li><a href="faqs.html">FAQs</a></li>
+                   <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+           </nav>
+       </header>
+        <section style="overflow-x: auto;">
             
             <table>
                 <caption>Product Training Schedule</caption>
@@ -158,5 +176,6 @@ File Name: Index.html       -->
 
         </footer>
     </div>    
+    <script src="scripts/script.js"></script>
 </body>
 </html>

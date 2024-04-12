@@ -69,3 +69,16 @@ button[type="reset"]:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); 
 }
+
+.gender{
+    display: inline-block;
+    margin: 5px 15px 10px 0;
+}
+
+ /* mobile media query */
+ @media only screen and (max-width: 630px) {
+    button[type="submit"],
+button[type="reset"] {
+   padding: 10px;
+}
+ }
