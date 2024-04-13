@@ -9,14 +9,14 @@ section{
 section.guarantee{
     padding-bottom: 15px;
 }
-.mobile{
+.mobile-story{
     display: none;
 }
 
 @media screen and (min-width: 630px), print { 
 
     /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
-    .mobile{
+    .mobile-story{
         display: block;
     }
 }
